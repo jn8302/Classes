@@ -9,7 +9,7 @@ def counterLabel(label):
         label.after(1000,count)
     count()    
 
-
+# main window
 
 root = tk.Tk()
 
