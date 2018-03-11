@@ -7,7 +7,14 @@ def counterLabel(label):
         counter += 1
         label.config(text = str(counter))
         label.after(1000,count)
-    count()    
+    count()
+
+def resetCounter():
+    #print("Reset")
+    #label.config(text = "0")
+
+    global counter
+    counter = 0
 
 # main window
 
@@ -30,6 +37,6 @@ w = tk.Label(root, text = labelText)
 w.pack()
 
 
-button = tk.Button(root, text = "Reset", width=25, command = root.destroy)
+button = tk.Button(root, text = "Reset", width=25, command = resetCounter)
 button.pack()
 root.mainloop()
