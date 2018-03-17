@@ -17,6 +17,11 @@ b4 = Button(root, text = "4").grid(row = 3,column = 1)
 b5 = Button(root, text = "5").grid(row = 3,column = 2)
 b6 = Button(root, text = "6").grid(row = 3,column = 3)
 
+b1 = Button(root, text = "1").grid(row = 4,column = 1)
+b2 = Button(root, text = "2").grid(row = 4,column = 2)
+b3 = Button(root, text = "3").grid(row = 4,column = 3)
+
+
 def add_2_num(n1,n2):
     return n1 + n2
     
